@@ -1,0 +1,85 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+<nav class="titulo">
+  <h2>Desafío - Servidores Welcome World</h2>
+</nav>
+
+<div class="row m-auto container-fluid">
+
+
+  <div class="col-12 col-sm-6 col-lg-3 ">
+    <div class="box p-3">
+      <h3>Crear un archivo</h3>
+      <form action="http://localhost:8080/crear" target="_blank">
+        <div class="form-group">
+          Nombre del archivo
+          <input name="archivo" class="form-control" id="archivo" />
+        </div>
+        <div class="form-group">
+          Contenido
+          <textarea name="contenido" class="form-control" id="contenido" cols="30" rows="8"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Crear archivo</button>
+      </form>
+    </div>
+  </div>
+
+ 
+  <div class="col-12 col-sm-6 col-lg-3 ">
+    <div class="box p-3">
+      <h3>Leer un archivo</h3>
+      <form action="http://localhost:8080/leer" target="_blank">
+        <div class="form-group">
+          Nombre del archivo
+          <input name="archivo" class="form-control" id="archivo" />
+        </div>
+        <button type="submit" class="btn btn-info">Consultar archivo</button>
+      </form>
+    </div>
+  </div>
+
+ 
+  <div class="col-12 col-sm-6 col-lg-3 ">
+    <div class="box p-3">
+      <h3>Renombrar un archivo</h3>
+      <form action="http://localhost:8080/renombrar" target="_blank">
+        <div class="form-group">
+          Nombre del archivo
+          <input name="nombre" class="form-control" id="nombre" />
+        </div>
+        <div class="form-group">
+          Nuevo nombre del archivo
+          <input name="nuevoNombre" class="form-control" id="nuevoNombre" />
+        </div>
+        <button type="submit" class="btn btn-warning">Renombrar archivo</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="col-12 col-sm-6 col-lg-3 ">
+    <div class="box p-3">
+      <h3>Eliminar un archivo</h3>
+      <form action="http://localhost:8080/eliminar" target="_blank">
+        <div class="form-group">
+          Nombre del archivo
+          <input name="archivo" class="form-control" id="archivo" />
+        </div>
+        <button type="submit" class="btn btn-danger">Eliminar archivo</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+</body>

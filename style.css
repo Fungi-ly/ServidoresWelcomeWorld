@@ -1,0 +1,26 @@
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .row {
+    width: 90%;
+  }
+  .box {
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    height: 470px;
+  }
+  .btn {
+    width: 100%;
+  }
+  @media (max-width: 576px) {
+    .row {
+      width: 80% !important;
+    }
+    .box {
+      height: auto;
+    }
+  }
